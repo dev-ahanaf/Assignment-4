@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI Plugin -->
+    <script>
+        tailwind.config = {
+            plugins: [daisyui],
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/daisyui@3.41.0/dist/full.js"></script>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+
+    <title> Assignment 4</title>
+
+</head>
+
+
+<body class="bg-gray-50 pb-20">
+
+    <header class="w-[90%] md:w-[80%] mx-auto mt-10">
+        <h1 class="text-4xl font-bold text-blue-950 mb-8 text-center md:text-left" > Job Application Tracker </h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div class="bg-white shadow rounded-lg p-6 text-center ">
+                <p class="text-gray-500 font-bold uppercase text-xs">Total Applications</p>
+                <p id="total-count" class="text-3xl font-bold text-blue-950">8</p>
+            </div>
+
+            <div class="bg-white shadow rounded-lg p-6 text-center  ">
+                <p class="text-gray-500 font-bold uppercase text-xs">Interview</p>
+                <p id="interview-count" class="text-3xl font-bold text-green-600">0</p>
+            </div>
+
+            <div class="bg-white shadow rounded-lg p-6 text-center ">
+                <p class="text-gray-500 font-bold uppercase text-xs">Rejected</p>
+                <p id="rejected-count" class="text-3xl font-bold text-red-600">0</p>
+            </div>
+
+        </div>
+
+    </header>
